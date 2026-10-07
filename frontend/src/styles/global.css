@@ -35,3 +35,34 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.legend-item.muted { background: transparent; padding-left: 0; }
+.muted { color: var(--muted); }
+.ok-text { color: #067647; }
+.warn { color: #b54708; }
+.cell-note { margin: 2px 0 0; font-size: 11px; color: #b54708; }
+.detail-panel { margin-top: 14px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.detail-head { display: flex; justify-content: space-between; align-items: center; }
+.detail-head h3 { margin: 0; font-size: 14px; }
+.trace-list { margin: 8px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; }
+.trace-item { font-size: 12px; display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; }
+.trace-at { color: var(--muted); }
+.trace-kind { font-weight: 600; }
+.trace-kind[data-kind='驳回'] { color: #b42318; }
+.trace-kind[data-kind='完工'] { color: #067647; }
+.trace-by em { color: var(--muted); font-style: normal; }
+.trace-note { color: var(--muted); }
+.modal-mask { position: fixed; inset: 0; background: rgba(16, 24, 40, 0.45); display: flex; align-items: center; justify-content: center; z-index: 20; }
+.modal-card { background: #fff; border-radius: 10px; padding: 18px 20px; width: 460px; max-width: 92vw; }
+.modal-card h3 { margin: 0 0 6px; }
+.modal-hint { font-size: 12px; color: var(--muted); margin: 4px 0 10px; }
+.modal-field { display: block; margin-bottom: 10px; }
+.modal-field span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+.modal-field i { color: #b42318; font-style: normal; margin-left: 2px; }
+.modal-field input { width: 100%; padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 6px; }
+.crew-switch { display: inline-flex; align-items: center; gap: 6px; }
+.crew-switch select { padding: 2px 4px; border-radius: 6px; border: 1px solid var(--border); }
+.todo-panel { margin-top: 16px; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
+.todo-panel h3 { margin: 0 0 8px; font-size: 14px; }
+.sync-ok { color: #067647; font-size: 12px; }
+.sync-bad { color: #b42318; font-size: 12px; }

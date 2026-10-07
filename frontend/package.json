@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "verify:domain": "tsc -p tsconfig.verify.json && node -e \"require('fs').mkdirSync('scripts/cjs',{recursive:true});require('fs').writeFileSync('scripts/cjs/package.json','{\\\"type\\\":\\\"commonjs\\\"}')\" && node scripts/cjs/scripts/verify-domain.js"
   },
   "dependencies": {
     "pinia": "^2.1.7",

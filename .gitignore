@@ -85,3 +85,6 @@ desktop.ini
 *.db
 *.pid
 *.seed
+
+# 领域验证脚本的临时编译产物
+scripts/cjs/
